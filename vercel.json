@@ -5,11 +5,20 @@
       "headers": [
         {
           "key": "Cross-Origin-Embedder-Policy",
-          "value": "credentialless" 
+          "value": "require-corp"
         },
         {
           "key": "Cross-Origin-Opener-Policy",
           "value": "same-origin"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).js",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
         }
       ]
     }
